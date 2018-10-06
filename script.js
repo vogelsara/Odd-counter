@@ -19,46 +19,14 @@ function countDenomination () {
 
     var remainder = odd;
     var denomination;
+    var denominationArray = [1000, 500, 200, 100, 50, 20, 10, 5, 2, 1];
+    var denominationArrayLength = denominationArray.length;
 
-    denomination = 1000;
-    document.getElementById(denomination).value = Math.floor(remainder / denomination);
-    remainder = remainder % denomination;
-
-    denomination = 500;
-    document.getElementById(denomination).value = Math.floor(remainder / denomination);
-    remainder = remainder % denomination;
-
-    denomination = 200;
-    document.getElementById(denomination).value = Math.floor(remainder / denomination);
-    remainder = remainder % denomination;
-
-    denomination = 100;
-    document.getElementById(denomination).value = Math.floor(remainder / denomination);
-    remainder = remainder % denomination;
-
-    denomination = 50;
-    document.getElementById(denomination).value = Math.floor(remainder / denomination);
-    remainder = remainder % denomination;
-
-    denomination = 20;
-    document.getElementById(denomination).value = Math.floor(remainder / denomination);
-    remainder = remainder % denomination;
-
-    denomination = 10;
-    document.getElementById(denomination).value = Math.floor(remainder / denomination);
-    remainder = remainder % denomination;
-
-    denomination = 5;
-    document.getElementById(denomination).value = Math.floor(remainder / denomination);
-    remainder = remainder % denomination;
-
-    denomination = 2;
-    document.getElementById(denomination).value = Math.floor(remainder / denomination);
-    remainder = remainder % denomination;
-
-    denomination = 1;
-    document.getElementById(denomination).value = Math.floor(remainder / denomination);
-    remainder = remainder % denomination;
+    for (var i = 0; i < denominationArrayLength; i++) {
+        denomination = denominationArray[i];
+        document.getElementById(denomination).value = Math.floor(remainder / denomination);
+        remainder = remainder % denomination;
+    }
 }
 
 
