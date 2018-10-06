@@ -18,36 +18,47 @@ function calculateTheOdd () {
 function countDenomination () {
 
     var remainder = odd;
+    var denomination;
 
-    document.getElementById('1000').value = Math.floor(remainder / 1000);
-    remainder = remainder % 1000;
+    denomination = 1000;
+    document.getElementById(denomination).value = Math.floor(remainder / denomination);
+    remainder = remainder % denomination;
 
-    document.getElementById('500').value = Math.floor(remainder / 500);
-    remainder = remainder % 500;
+    denomination = 500;
+    document.getElementById(denomination).value = Math.floor(remainder / denomination);
+    remainder = remainder % denomination;
 
-    document.getElementById('200').value = Math.floor(remainder / 200);
-    remainder = remainder % 200;
+    denomination = 200;
+    document.getElementById(denomination).value = Math.floor(remainder / denomination);
+    remainder = remainder % denomination;
 
-    document.getElementById('100').value = Math.floor(remainder / 100);
-    remainder = remainder % 100;
+    denomination = 100;
+    document.getElementById(denomination).value = Math.floor(remainder / denomination);
+    remainder = remainder % denomination;
 
-    document.getElementById('50').value = Math.floor(remainder / 50);
-    remainder = remainder % 50;
+    denomination = 50;
+    document.getElementById(denomination).value = Math.floor(remainder / denomination);
+    remainder = remainder % denomination;
 
-    document.getElementById('20').value = Math.floor(remainder / 20);
-    remainder = remainder % 20;
+    denomination = 20;
+    document.getElementById(denomination).value = Math.floor(remainder / denomination);
+    remainder = remainder % denomination;
 
-    document.getElementById('10').value = Math.floor(remainder / 10);
-    remainder = remainder % 10;
+    denomination = 10;
+    document.getElementById(denomination).value = Math.floor(remainder / denomination);
+    remainder = remainder % denomination;
 
-    document.getElementById('5').value = Math.floor(remainder / 5);
-    remainder = remainder % 5;
+    denomination = 5;
+    document.getElementById(denomination).value = Math.floor(remainder / denomination);
+    remainder = remainder % denomination;
 
-    document.getElementById('2').value = Math.floor(remainder / 2);
-    remainder = remainder % 2;
+    denomination = 2;
+    document.getElementById(denomination).value = Math.floor(remainder / denomination);
+    remainder = remainder % denomination;
 
-    document.getElementById('1').value = Math.floor(remainder / 1);
-    remainder = remainder % 1;
+    denomination = 1;
+    document.getElementById(denomination).value = Math.floor(remainder / denomination);
+    remainder = remainder % denomination;
 }
 
 
